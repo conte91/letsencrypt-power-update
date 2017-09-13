@@ -2,4 +2,5 @@
 Description=Update letsencrypt certificates
 [Service]
 Type=oneshot
-ExecStart=cd /root/letsencrypt-power-update && ./updateAll.sh
+ExecStart=/root/letsencrypt-power-update/updateAll.sh
+WorkingDirectory=/root/letsencrypt-power-update
